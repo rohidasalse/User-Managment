@@ -1,21 +1,21 @@
 # User-Managment
-# 🧑‍💻 Spring Boot User Management Microservice
+#  Spring Boot User Management Microservice
 
 This is a User Management RESTful API built using **Spring Boot** that supports user **registration**, **login**, **JWT-based authentication**, **role-based access control**, and **global exception handling**.
 
 ---
 
-## 🔍 Features
+##  Features
 
-- ✅ User registration and login with email/password
-- 🔐 JWT authentication for securing APIs
-- 👮 Role-based authorization (`ROLE_USER`, `ROLE_ADMIN`)
-- 📦 Secured REST endpoints
-- ⚠️ Global exception handling using `@ControllerAdvice`
+-  User registration and login with email/password
+-  JWT authentication for securing APIs
+-  Role-based authorization (`ROLE_USER`, `ROLE_ADMIN`)
+-  Secured REST endpoints
+-  Global exception handling using `@ControllerAdvice`
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Java 8+
 - Spring Boot
@@ -26,20 +26,20 @@ This is a User Management RESTful API built using **Spring Boot** that supports 
 
 ---
 
-## 📌 API Endpoints
+##  API Endpoints
 
-### 🔓 Public APIs
+###  Public APIs
 
 | Method | Endpoint     | Description         |
 |--------|--------------|---------------------|
 | POST   | `/register`  | Register new user   |
 | POST   | `/login`     | Login and get JWT   |
 
-> 🔹 Default role on registration: `ROLE_USER`
+>  Default role on registration: `ROLE_USER`
 
 ---
 
-### 🔐 Secured APIs (JWT Required)
+###  Secured APIs (JWT Required)
 
 | Method | Endpoint         | Access Role(s)     |
 |--------|------------------|--------------------|
@@ -51,7 +51,7 @@ This is a User Management RESTful API built using **Spring Boot** that supports 
 
 ---
 
-## 🔑 Authentication Flow
+##  Authentication Flow
 
 1. **Register** a user using `/register`
 2. **Login** with the same user using `/login`
@@ -60,7 +60,7 @@ This is a User Management RESTful API built using **Spring Boot** that supports 
 
 ---
 
-## 🧪 Testing the Application
+##  Testing the Application
 
 You can test the APIs using **Postman**:
 
@@ -91,7 +91,7 @@ You can test the APIs using **Postman**:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```java
 com.example.demo
@@ -109,7 +109,7 @@ com.example.demo
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 Update your `application.properties` file with the following:
 
@@ -135,7 +135,7 @@ spring.jpa.show-sql=true
 
 ---
 
-## ⚙️ How to Run
+##  How to Run
 
 ### Using Maven
 ```bash
