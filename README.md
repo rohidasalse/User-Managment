@@ -91,19 +91,21 @@ You can test the APIs using **Postman**:
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
+```java
 com.example.demo
 │
-├── controller --> REST controllers(AuthController, UserController)
-├── entity --> JPA entities (User,role)
-├── dto     -->(AuthRequest, AuthResponse)
-├── repository --> Spring Data JPA repositories (UserRepository)
+├── controller         --> REST controllers (AuthController, UserController)
+├── entity             --> JPA entities (User, Role)
+├── dto                --> DTO classes (AuthRequest, AuthResponse)
+├── repository         --> Spring Data JPA repositories (UserRepository)
 ├── service
-│ ├── JwtFilter --> JWT validation filter
-│ └── JwtUtil --> Token generation/validation
-├── securityConfig --> Spring Security config
-└── exception --> Global exception handler
+│   ├── JwtFilter      --> JWT validation filter
+│   └── JwtUtil        --> Token generation/validation
+├── securityConfig     --> Spring Security configuration
+└── exception          --> Global exception handler
+
 
 ---
 
